@@ -53,11 +53,16 @@
 $wgExtensionFunctions[] = 'wfFixedHeaderTable';
 $wgExtensionCredits['parserhook'][] = array(
 		'name' => 'FixedHeaderTable',
-		'description' => 'Allows the creation of fixed header and fixed column tables.',
-		'author' => 'Ishmal Lewis, Mark Malek for JQuery FixedHeaderTable.js widget',
-		'version' => '1.0.0',
-		'url' => 'https://www.mediawiki.org/wiki/Extension:VideoFlash' // TODO correct this url
+		'descriptionmsg' => 'fixedheadertable-desc',
+		'author' => array( 'Ishmal Lewis', 'Mark Malek for JQuery FixedHeaderTable.js widget' ),
+		'version' => '1.0.1',
+		'url' => 'https://www.mediawiki.org/wiki/Extension:FixedHeaderTable'
 );
+
+/**
+ * Load i18n file
+ */
+$wgMessagesDirs['FixedHeaderTable'] = __DIR__ . '/i18n';
 
 /**
  * Register ResourceLoader modules
