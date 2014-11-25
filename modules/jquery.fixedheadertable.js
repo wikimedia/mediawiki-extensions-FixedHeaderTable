@@ -364,8 +364,8 @@
             $thead.clone().appendTo($divHead.find('table'));
 
             $thead.find('tr th').each(function (index) {
-                var thisWidth = $(this).width() + 0.5;
-                $divHead.find('table tr th').eq(index).css('minWidth', thisWidth);
+                var thisWidth = parseInt(tableProps.tbody[index], 10);
+                $divHead.find('table tr th').eq(index).css({ 'min-width': thisWidth });
             });
         } else {
             $divHead = $wrapper.find('div.fht-thead');
@@ -512,7 +512,7 @@
             $cell = ($(this).find('div.fht-cell').length) ? $(this).find('div.fht-cell') : $('<div class="fht-cell"></div>').appendTo($(this));
             
             $cell.css({
-                'width': parseInt(cellArray[index], 10)
+                'min-width': parseInt(cellArray[index], 10) + 1
             });
 
             /*
