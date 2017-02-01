@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Esketti"
+			"Esketti",
+			"QZanden"
 		]
 	},
-	"fixedheadertable-desc": "Maakt het creëren van vaste header en vaste kolom van tabellen"
+	"fixedheadertable-desc": "Maakt het mogelijk tabellen met een vaste header en vaste kolommen te maken"
 }
