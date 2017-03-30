@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Revi"
+			"Revi",
+			"아라"
 		]
 	},
-	"fixedheadertable-desc": "고정된 헤더와 표 행을 추가할 수 있게 해 줍니다"
+	"fixedheadertable-desc": "고정된 머릿글과 고정된 표 행을 만들 수 있게 합니다"
 }
