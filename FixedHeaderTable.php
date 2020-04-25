@@ -48,7 +48,8 @@
  * |}
  * </fixedheadertable>
  */
- 
+
+use MediaWiki\MediaWikiServices; 
 
 $wgExtensionFunctions[] = 'wfFixedHeaderTable';
 $wgExtensionCredits['parserhook'][] = array(
@@ -86,9 +87,8 @@ $wgResourceModules['ext.fixedheadertable'] = array(
 	'scripts' => 'modules/fixedheadertable.js',
 ) + $commonModuleInfo;
 
-function wfFixedHeaderTable() {
-	global $wgParser;	
-	$wgParser->setHook('fixedheadertable', 'renderFixedHeaderTable');
+function wfFixedHeaderTable() {	
+	MediaWikiServices::getInstance()->getParser()->setHook('fixedheadertable', 'renderFixedHeaderTable');
 }
 
 function renderFixedHeaderTable($input, $args = array(), $parser, $frame ){
