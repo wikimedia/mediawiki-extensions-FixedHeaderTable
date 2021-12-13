@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
-	"fixedheadertable-desc": "Sabit başlık ve sabit sütun tabloları oluşturulmasını sağlar"
+	"fixedheadertable-desc": "Sabit başlık ve sabit sütun tablolarının oluşturulmasına izin verir"
 }
