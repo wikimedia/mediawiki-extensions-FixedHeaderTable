@@ -91,7 +91,7 @@ function wfFixedHeaderTable() {
 	MediaWikiServices::getInstance()->getParser()->setHook('fixedheadertable', 'renderFixedHeaderTable');
 }
 
-function renderFixedHeaderTable($input, $args = array(), $parser, $frame ){
+function renderFixedHeaderTable($input, $args, $parser, $frame ){
 	global $wgOut, $wgExtensionAssetsPath;
 	
 	# Register scripts
